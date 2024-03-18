@@ -13,14 +13,7 @@ module.exports = {
     }
 };
 
-app.put('/api/rubber-duck/event-date', (req, res) => {
-    // Assuming you have body-parser middleware to parse JSON request bodies
-    const { eventDate } = req.body;
-    
-    console.log(`The next Giant Rubber Duck event date has been updated to: ${eventDate}`);
-    
-    res.send({ message: 'Event date updated successfully!' });
-});
+
 
 
 

@@ -11,7 +11,14 @@ const { getCompliment, getFortune, eventDate} = require('./controller')
 
 app.get("/api/compliment", getCompliment);
 app.get('/api/fortune', getFortune);
-app.put("/api/rubber-duck/event-date", eventDate)
+
+app.put('/api/rubber-duck/event-date', (req, res) => {
+    const { eventDate } = req.body;
+    
+    console.log(`The next Giant Rubber Duck event date has been updated to: ${eventDate}`);
+    
+    res.send({ message: 'Event date updated successfully!' });
+});
 
 app.post('/api/prediction', (req, res) => {
     const { name, prediction } = req.body;
