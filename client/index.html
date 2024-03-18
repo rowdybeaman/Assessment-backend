@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <button id="complimentButton" style="cursor: pointer;">Get a compliment</button>
+    <br><br><br>
+    <img src="https://assets.wfcdn.com/im/22567184/compr-r85/7558/75581831/zoltar-fortune-teller-cardboard-standup.jpg" id="zoltarImage" alt="Zoltar Fortune Teller" width="200" style="cursor: pointer;">
+    
+    <h2>Update Giant Rubber Duck's Next Event Date</h2>
+    <form id="updateForm">
+        <label for="eventDate">Next Event Date:</label>
+        <input type="date" id="eventDate" name="eventDate" required>
+        <button type="submit">Update Event Date</button>
+    </form>
+
+    <h2>Submit Your Prediction for Mike Tyson vs. Jake Paul</h2>
+    <form id="predictionForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="prediction">Prediction:</label>
+        <select id="prediction" name="prediction" required>
+            <option value="Mike Tyson">Mike Tyson Wins</option>
+            <option value="Jake Paul">Jake Paul Wins</option>
+            <option value="Draw">Draw</option>
+        </select>
+        
+        <button type="submit">Submit Prediction</button>
+    </form>
+
+    <h2>Unsubscribe from Being RickRolled</h2>
+    <form id="unsubscribeForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <button type="submit">Unsubscribe</button>
+    </form>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
